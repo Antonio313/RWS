@@ -1,4 +1,5 @@
-import { useState, FormEvent, ChangeEvent } from 'react';
+import { useState } from 'react';
+import type { FormEvent, ChangeEvent } from 'react';
 import { CheckCircle, XCircle } from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
 import FormInput from '../ui/FormInput';
