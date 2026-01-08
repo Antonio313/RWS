@@ -101,7 +101,7 @@ export default function ConsultationForm() {
   };
 
   return (
-    <section id={SECTION_IDS.CONTACT} className="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
+    <section id={SECTION_IDS.CONTACT} className="py-20 px-6 bg-linear-to-b from-gray-900 to-black">
       <div className="container mx-auto max-w-4xl">
         <SectionHeader
           title="Let's Work Together"
@@ -111,7 +111,7 @@ export default function ConsultationForm() {
         {/* Success Message */}
         {status === 'success' && (
           <div className="mb-8 p-6 rounded-lg bg-green-500/10 border border-green-500/50 flex items-center gap-4 animate-fade-in">
-            <CheckCircle className="w-8 h-8 text-green-500 flex-shrink-0" />
+            <CheckCircle className="w-8 h-8 text-green-500 shrink-0" />
             <div>
               <h4 className="text-lg font-semibold text-green-500 mb-1">Success!</h4>
               <p className="text-green-400">
@@ -124,7 +124,7 @@ export default function ConsultationForm() {
         {/* Error Message */}
         {status === 'error' && (
           <div className="mb-8 p-6 rounded-lg bg-red-500/10 border border-red-500/50 flex items-center gap-4 animate-fade-in">
-            <XCircle className="w-8 h-8 text-red-500 flex-shrink-0" />
+            <XCircle className="w-8 h-8 text-red-500 shrink-0" />
             <div>
               <h4 className="text-lg font-semibold text-red-500 mb-1">Oops!</h4>
               <p className="text-red-400">
