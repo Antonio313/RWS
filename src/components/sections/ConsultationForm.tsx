@@ -197,7 +197,7 @@ export default function ConsultationForm() {
 
           {/* Budget */}
           <FormSelect
-            label="Budget Range (Optional)"
+            label="Budget Range in USD (Optional)"
             name="budget"
             value={formData.budget}
             onChange={handleChange}
