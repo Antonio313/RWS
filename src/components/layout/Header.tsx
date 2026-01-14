@@ -50,16 +50,13 @@ export default function Header() {
             {/* Logo */}
             <button
               onClick={() => scrollToSection('home')}
-              className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity"
             >
               <img
-                src="/RWS Logo.png"
+                src="/RWS Logo, No Tag.png?v=2"
                 alt="RWS Logo"
                 className="h-10 w-auto"
               />
-              <span className="text-xl font-bold gradient-text hidden sm:inline">
-                RWS
-              </span>
             </button>
 
             {/* Desktop Navigation */}
@@ -76,7 +73,7 @@ export default function Header() {
                 >
                   {link.label}
                   {activeSection === link.id && (
-                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-cyan-500"></span>
+                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-linear-to-r from-purple-500 to-cyan-500"></span>
                   )}
                 </button>
               ))}

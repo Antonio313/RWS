@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/RWS Logo.png"
+                src="/RWS Logo, No Tag.png?v=2"
                 alt="RWS Logo"
                 className="h-12 w-auto"
               />

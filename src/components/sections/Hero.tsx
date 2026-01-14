@@ -22,7 +22,7 @@ export default function Hero() {
         {/* Logo */}
         <div className="mb-8 animate-float">
           <img
-            src="/RWS Logo.png"
+            src="/RWS Logo.png?v=2"
             alt="Reuel's Web Services Logo"
             className="w-64 md:w-80 lg:w-96 mx-auto drop-shadow-2xl"
           />
