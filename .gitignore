@@ -30,3 +30,14 @@ dist-ssr
 *.sln
 *.sw?
 CLAUDE.md
+.taste-skill/
+.impeccable/decision/
+.impeccable/reference/
+.claude/settings.local.json
+# Impeccable's platform-specific engine binary (re-created by `npx impeccable install`) and local caches
+.claude/skills/impeccable/scripts/bin/
+**/.impeccable/hook.cache.json
+**/.impeccable/questions/
+**/.impeccable/config.local.json
+**/.impeccable/review/
+**/.impeccable/build/

@@ -3,5 +3,4 @@ export const contactInfo = {
   phoneFormatted: "(876) 573-8748",
   email: "reuelswebservices@gmail.com",
   companyName: "Reuel's Web Services",
-  tagline: "Your Vision, Our Code"
 };

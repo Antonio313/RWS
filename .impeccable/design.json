@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T12:00:00+00:00",
+  "title": "Design System: Reuel's Web Services",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Warm Stone",
+        "canonical": "#f3f1ec",
+        "tonalRamp": [
+          "#2b2821",
+          "#504a3a",
+          "#776c50",
+          "#9e8e66",
+          "#b3a88f",
+          "#c9c4b5",
+          "#e2e0da",
+          "#f4f3f1"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#2a2723",
+          "#4c473d",
+          "#706857",
+          "#958870",
+          "#ada495",
+          "#c6c1b9",
+          "#e1dfdb",
+          "#f3f3f1"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Tinted Panel",
+        "canonical": "#ebe7df",
+        "tonalRamp": [
+          "#2b2821",
+          "#504939",
+          "#776a50",
+          "#9f8c66",
+          "#b3a78e",
+          "#cac3b5",
+          "#e2dfda",
+          "#f4f3f1"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Deeper Panel",
+        "canonical": "#e2ddd2",
+        "tonalRamp": [
+          "#2b2821",
+          "#50493a",
+          "#766a51",
+          "#9d8c67",
+          "#b2a78f",
+          "#c9c3b6",
+          "#e2dfda",
+          "#f4f3f1"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "canonical": "#1c1b19",
+        "tonalRamp": [
+          "#282725",
+          "#484642",
+          "#68655f",
+          "#89847b",
+          "#a5a29c",
+          "#c2c0bd",
+          "#dfdedd",
+          "#f3f2f2"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Second Ink",
+        "canonical": "#4b4843",
+        "tonalRamp": [
+          "#272725",
+          "#484642",
+          "#68655f",
+          "#89847b",
+          "#a5a29c",
+          "#c2c0bd",
+          "#dfdedd",
+          "#f3f2f2"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "canonical": "#1f5eeb",
+        "tonalRamp": [
+          "#141f39",
+          "#1b356f",
+          "#1b48ac",
+          "#1b5be9",
+          "#5e87e3",
+          "#9ab1e5",
+          "#ced8ed",
+          "#edf0f7"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Pressed Blue",
+        "canonical": "#184fcc",
+        "tonalRamp": [
+          "#151f38",
+          "#1d366c",
+          "#1f49a8",
+          "#215ce4",
+          "#6288e0",
+          "#9cb2e2",
+          "#cfd8ec",
+          "#eef0f7"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "On Blue",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#2a2723",
+          "#4c473d",
+          "#706857",
+          "#958870",
+          "#ada495",
+          "#c6c1b9",
+          "#e1dfdb",
+          "#f3f3f1"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Blue Wash",
+        "canonical": "#e4ecfd",
+        "tonalRamp": [
+          "#131f39",
+          "#1a3570",
+          "#1949ae",
+          "#185cec",
+          "#5c88e5",
+          "#99b1e6",
+          "#ced8ee",
+          "#edf0f7"
+        ]
+      },
+      "danger": {
+        "role": "error",
+        "displayName": "Error Red",
+        "canonical": "#b4322a",
+        "tonalRamp": [
+          "#341a18",
+          "#642926",
+          "#99342e",
+          "#cf3e35",
+          "#d2756f",
+          "#dba7a4",
+          "#e9d4d2",
+          "#f6efef"
+        ]
+      },
+      "field-bg": {
+        "role": "neutral",
+        "displayName": "Field Paper",
+        "canonical": "#faf9f6",
+        "tonalRamp": [
+          "#2d2920",
+          "#534c37",
+          "#7c704b",
+          "#a5945f",
+          "#b7ac8a",
+          "#ccc6b3",
+          "#e3e0d9",
+          "#f4f3f1"
+        ]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "Field Line",
+        "canonical": "#d9d3c7",
+        "tonalRamp": [
+          "#2a2822",
+          "#4e483b",
+          "#746953",
+          "#9a8a6a",
+          "#b0a691",
+          "#c8c2b7",
+          "#e1dfda",
+          "#f3f3f1"
+        ]
+      },
+      "field-line-hover": {
+        "role": "neutral",
+        "displayName": "Field Line Hover",
+        "canonical": "#bdb6a8",
+        "tonalRamp": [
+          "#292723",
+          "#4c473e",
+          "#6f6758",
+          "#938871",
+          "#aca496",
+          "#c5c1b9",
+          "#e0dfdb",
+          "#f3f3f1"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder",
+        "canonical": "#8b867d",
+        "tonalRamp": [
+          "#282725",
+          "#484642",
+          "#68655f",
+          "#89847b",
+          "#a5a29c",
+          "#c2c0bd",
+          "#dfdedd",
+          "#f3f2f2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero headline only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles and mobile menu links."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Picker question, sheet titles, service column titles, About quote."
+      },
+      "card-title": {
+        "displayName": "Card Title",
+        "purpose": "Names inside cards; problem labels step 18px to 20px."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "One-sentence intro beside a headline."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text; 46 to 60ch measure."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Hints, nav links, helper and footer text; 16px floor."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All button labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet-lift-mobile",
+        "value": "0 -12px 48px rgb(28 27 25 / 0.18)",
+        "purpose": "Bottom sheet on phones; the only shadow in the system."
+      },
+      {
+        "name": "sheet-lift-desktop",
+        "value": "-12px 0 48px rgb(28 27 25 / 0.18)",
+        "purpose": "Side sheet on desktop."
+      },
+      {
+        "name": "sheet-scrim",
+        "value": "rgb(28 27 25 / 0.32)",
+        "purpose": "Backdrop behind the open sheet."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Reveals, press feedback, hover nudges."
+      },
+      {
+        "name": "ease-drawer",
+        "value": "cubic-bezier(0.32, 0.72, 0, 1)",
+        "purpose": "Fix sheet slide, 420ms."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 600ms, transform 800ms ease-out; translateY(24px); 60ms stagger",
+        "purpose": "Once-only entrance as content enters the viewport; images rise 36px from 0.985 over 900ms."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) 160-180ms ease-out; work cards 0.985",
+        "purpose": "Tactile feedback on buttons and cards."
+      },
+      {
+        "name": "shot-lift",
+        "value": "translateY(-6px) 500ms ease-out",
+        "purpose": "Work card screenshot on hover."
+      },
+      {
+        "name": "drift",
+        "value": "scroll-linked translate3d, default 40px range",
+        "purpose": "Pictures marked to drift; disabled under reduced motion."
+      },
+      {
+        "name": "scrim-fade",
+        "value": "opacity 320ms ease",
+        "purpose": "Sheet backdrop."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one thing to do in a region: Start a project, Fix mine, Send message. Blue only here.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Fix mine <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:0.55em;min-height:52px;padding:0 26px;border:0;border-radius:999px;font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;font-weight:650;font-size:16px;cursor:pointer;transition:transform 160ms cubic-bezier(0.23,1,0.32,1),background-color 200ms ease,color 200ms ease;} .ds-btn:active{transform:scale(0.97);} .ds-btn:focus-visible{outline:3px solid var(--color-accent,#1f5eeb);outline-offset:3px;} .ds-btn svg{transition:transform 200ms cubic-bezier(0.23,1,0.32,1);} .ds-btn:hover svg{transform:translateX(3px);} .ds-btn-primary{background:var(--color-accent,#1f5eeb);color:var(--color-accent-ink,#fff);} .ds-btn-primary:hover{background:var(--color-accent-hover,#184fcc);}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary action on Warm Stone: Show more, WhatsApp, Call, Menu.",
+      "html": "<button class=\"ds-btn ds-btn-quiet\">Show 6 more problems</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:0.55em;min-height:52px;padding:0 26px;border:0;border-radius:999px;font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;font-weight:650;font-size:16px;cursor:pointer;transition:transform 160ms cubic-bezier(0.23,1,0.32,1),background-color 200ms ease,color 200ms ease;} .ds-btn:active{transform:scale(0.97);} .ds-btn:focus-visible{outline:3px solid var(--color-accent,#1f5eeb);outline-offset:3px;} .ds-btn svg{transition:transform 200ms cubic-bezier(0.23,1,0.32,1);} .ds-btn:hover svg{transform:translateX(3px);} .ds-btn-quiet{background:var(--color-card,#fff);color:var(--color-ink,#1c1b19);} .ds-btn-quiet:hover{background:var(--color-surface,#ebe7df);}"
+    },
+    {
+      "name": "Soft Button",
+      "kind": "button",
+      "refersTo": "button-soft",
+      "description": "Secondary action on a white card or sheet: Keep looking, Close.",
+      "html": "<button class=\"ds-btn ds-btn-soft\">Keep looking</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:0.55em;min-height:52px;padding:0 26px;border:0;border-radius:999px;font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;font-weight:650;font-size:16px;cursor:pointer;transition:transform 160ms cubic-bezier(0.23,1,0.32,1),background-color 200ms ease,color 200ms ease;} .ds-btn:active{transform:scale(0.97);} .ds-btn:focus-visible{outline:3px solid var(--color-accent,#1f5eeb);outline-offset:3px;} .ds-btn svg{transition:transform 200ms cubic-bezier(0.23,1,0.32,1);} .ds-btn:hover svg{transform:translateX(3px);} .ds-btn-soft{background:var(--color-surface,#ebe7df);color:var(--color-ink,#1c1b19);} .ds-btn-soft:hover{background:var(--color-surface-2,#e2ddd2);}"
+    },
+    {
+      "name": "Problem Card",
+      "kind": "card",
+      "refersTo": "problem-card",
+      "description": "Signature hero card: leading screenshot thumbnail, the problem in the visitor's words, a hint, and a Blue Wash arrow disc. Opens the fix sheet.",
+      "html": "<button class=\"ds-problem\"><span class=\"ds-problem-top\"><span class=\"ds-thumb\"></span><span><span class=\"ds-problem-label\">Customers keep calling for updates</span><span class=\"ds-problem-hint\">\"Where is my order?\" all day long</span></span></span><span class=\"ds-problem-foot\"><span>See the fix</span><span class=\"ds-go\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span></span></button>",
+      "css": ".ds-problem{display:flex;flex-direction:column;justify-content:space-between;gap:18px;width:280px;min-height:168px;padding:18px 18px 16px;border:0;border-radius:24px;background:var(--color-card,#fff);color:var(--color-ink,#1c1b19);font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;text-align:left;cursor:pointer;transition:transform 180ms cubic-bezier(0.23,1,0.32,1);} .ds-problem:active{transform:scale(0.97);} .ds-problem:focus-visible{outline:3px solid var(--color-accent,#1f5eeb);outline-offset:3px;} .ds-problem-top{display:flex;gap:14px;align-items:flex-start;} .ds-thumb{width:64px;height:64px;flex-shrink:0;border-radius:14px;background:var(--color-surface,#ebe7df);} .ds-problem-label{display:block;font-size:20px;font-weight:600;line-height:1.3;letter-spacing:-0.01em;} .ds-problem-hint{display:block;margin-top:4px;font-size:16px;line-height:1.35;color:var(--color-ink-2,#4b4843);} .ds-problem-foot{display:flex;align-items:center;justify-content:space-between;font-size:16px;font-weight:500;color:var(--color-ink-2,#4b4843);} .ds-go{display:grid;place-items:center;width:40px;height:40px;border-radius:999px;background:var(--color-accent-soft,#e4ecfd);color:var(--color-accent,#1f5eeb);transition:background-color 200ms ease,color 200ms ease,transform 200ms cubic-bezier(0.23,1,0.32,1);} .ds-problem:hover .ds-go{background:var(--color-accent,#1f5eeb);color:var(--color-accent-ink,#fff);transform:translateX(2px);}"
+    },
+    {
+      "name": "Work Card",
+      "kind": "card",
+      "refersTo": "work-card",
+      "description": "White card with a real screenshot on a tinted panel, name, headline and arrow disc. Screenshot rises on hover; opens the project sheet.",
+      "html": "<button class=\"ds-work\"><span class=\"ds-shot\"><span class=\"ds-screen\"></span></span><span class=\"ds-work-meta\"><span><span class=\"ds-work-name\">Luv Chat</span><span class=\"ds-work-sub\">Five shops, one stock count</span></span><span class=\"ds-go\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span></span></button>",
+      "css": ".ds-work{display:flex;flex-direction:column;width:360px;padding:12px;border:0;border-radius:28px;background:var(--color-card,#fff);color:var(--color-ink,#1c1b19);font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;text-align:left;cursor:pointer;overflow:hidden;transition:transform 180ms cubic-bezier(0.23,1,0.32,1);} .ds-work:active{transform:scale(0.985);} .ds-work:focus-visible{outline:3px solid var(--color-accent,#1f5eeb);outline-offset:3px;} .ds-shot{display:block;padding:16px;border-radius:20px;background:var(--color-surface,#ebe7df);transition:transform 500ms cubic-bezier(0.23,1,0.32,1);} .ds-work:hover .ds-shot{transform:translateY(-6px);} .ds-screen{display:block;aspect-ratio:16/10;border-radius:10px;background:#fff;} .ds-work-meta{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding:20px 12px 12px;} .ds-work-name{display:block;font-size:20px;font-weight:600;letter-spacing:-0.015em;} .ds-work-sub{display:block;margin-top:4px;font-size:16px;color:var(--color-ink-2,#4b4843);} .ds-go{display:grid;place-items:center;flex-shrink:0;width:40px;height:40px;border-radius:999px;background:var(--color-accent-soft,#e4ecfd);color:var(--color-accent,#1f5eeb);}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Form field with label above; the one place a hairline border is used. Focus turns the border blue.",
+      "html": "<label class=\"ds-label\">Your name<input class=\"ds-field\" placeholder=\"Jane Brown\"></label>",
+      "css": ".ds-label{display:block;width:320px;font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;font-weight:500;font-size:18px;color:var(--color-ink,#1c1b19);} .ds-field{display:block;box-sizing:border-box;width:100%;min-height:54px;margin-top:8px;padding:14px 16px;border:1px solid #d9d3c7;border-radius:14px;background:#faf9f6;color:var(--color-ink,#1c1b19);font:inherit;font-weight:400;font-size:18px;transition:border-color 200ms ease,background-color 200ms ease;} .ds-field::placeholder{color:#8b867d;} .ds-field:hover{border-color:#bdb6a8;} .ds-field:focus{outline:none;border-color:var(--color-accent,#1f5eeb);background:#fff;} .ds-field[aria-invalid='true']{border-color:var(--color-danger,#b4322a);}"
+    },
+    {
+      "name": "Header Nav",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Wordmark (blue RWS tile plus full name), quiet links with the current section in ink, compact primary CTA.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-mark\" href=\"#\"><span class=\"ds-tile\">RWS</span><span class=\"ds-name\">Reuel's Web Services</span></a><span class=\"ds-links\"><a href=\"#\" aria-current=\"true\">Work</a><a href=\"#\">Services</a><a href=\"#\">About</a><a class=\"ds-cta\" href=\"#\">Start a project</a></span></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:32px;height:72px;padding:0 24px;background:var(--color-ground,#f3f1ec);font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;} .ds-mark{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--color-ink,#1c1b19);} .ds-tile{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--color-accent,#1f5eeb);color:var(--color-accent-ink,#fff);font-size:14px;font-weight:800;letter-spacing:-0.02em;} .ds-name{font-size:18px;font-weight:700;letter-spacing:-0.015em;} .ds-links{display:flex;align-items:center;gap:36px;} .ds-links a{font-size:16px;font-weight:500;color:var(--color-ink-2,#4b4843);text-decoration:none;transition:color 200ms ease;} .ds-links a:hover,.ds-links a[aria-current]{color:var(--color-ink,#1c1b19);} .ds-links a:focus-visible{outline:3px solid var(--color-accent,#1f5eeb);outline-offset:3px;} .ds-links .ds-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:var(--color-accent,#1f5eeb);color:var(--color-accent-ink,#fff);font-weight:650;} .ds-links .ds-cta:hover{background:var(--color-accent-hover,#184fcc);color:#fff;}"
+    },
+    {
+      "name": "Fix Sheet",
+      "kind": "custom",
+      "refersTo": "sheet",
+      "description": "Native dialog: right side panel on desktop, bottom sheet on phones. Real screen on a tinted panel, how it was fixed, Fix mine and Keep looking. The only element with a shadow.",
+      "html": "<div class=\"ds-sheet\"><h2 class=\"ds-sheet-title\">Stock never matches what's on the shelf</h2><div class=\"ds-panel\"><span class=\"ds-screen\"></span></div><h3 class=\"ds-sheet-h3\">How I fixed it for Luv Chat</h3><p class=\"ds-sheet-p\">The online store reads stock from the shops' own point-of-sale system.</p><div class=\"ds-sheet-actions\"><button class=\"ds-btn ds-btn-primary\">Fix mine <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button><button class=\"ds-btn ds-btn-soft\">Keep looking</button></div></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:0.55em;min-height:52px;padding:0 26px;border:0;border-radius:999px;font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;font-weight:650;font-size:16px;cursor:pointer;transition:transform 160ms cubic-bezier(0.23,1,0.32,1),background-color 200ms ease,color 200ms ease;} .ds-btn:active{transform:scale(0.97);} .ds-btn:focus-visible{outline:3px solid var(--color-accent,#1f5eeb);outline-offset:3px;} .ds-btn svg{transition:transform 200ms cubic-bezier(0.23,1,0.32,1);} .ds-btn:hover svg{transform:translateX(3px);} .ds-btn-primary{background:var(--color-accent,#1f5eeb);color:#fff;} .ds-btn-primary:hover{background:var(--color-accent-hover,#184fcc);} .ds-btn-soft{background:var(--color-surface,#ebe7df);color:var(--color-ink,#1c1b19);} .ds-btn-soft:hover{background:var(--color-surface-2,#e2ddd2);} .ds-sheet{width:420px;padding:40px;border-radius:28px;background:var(--color-card,#fff);color:var(--color-ink,#1c1b19);box-shadow:-12px 0 48px rgb(28 27 25 / 0.18);font-family:'Figtree Variable', ui-sans-serif, system-ui, sans-serif;} .ds-sheet-title{margin:0;font-size:32px;font-weight:650;line-height:1.15;letter-spacing:-0.02em;} .ds-panel{margin-top:24px;padding:16px;border-radius:18px;background:var(--color-surface,#ebe7df);} .ds-screen{display:block;aspect-ratio:16/10;border-radius:10px;background:#fff;} .ds-sheet-h3{margin:32px 0 0;font-size:20px;font-weight:600;letter-spacing:-0.01em;} .ds-sheet-p{margin:8px 0 0;font-size:18px;line-height:1.6;} .ds-sheet-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Friendly App",
+    "overview": "The site behaves like a consumer app a busy owner already trusts, not like a developer studio and not like a template agency hero. Warm light stone is the ground; content lives on white cards with large, soft corners that float on it with no border and no resting shadow. Real screens of real builds sit on tinted stone panels inside those cards, so the work is the picture and nothing decorative competes with it.\n\nOne saturated blue does one job: it marks what you can do. Primary buttons, the arrow discs on tappable cards, the RWS mark, focus rings, selection and the caret. Headings, panels, backgrounds and emphasis never take it. Type is one friendly humanist sans, Figtree, set heavy and tight for headlines and generous for reading, at sizes that suit a non-technical reader on a phone (body 18px, nothing interactive below 16px).\n\nThe page reads as a sequence of big, touchable objects: the problem picker grid, the fix sheet that slides in, the work bento, the two service columns, the about cards, the budget card, the form. Motion is short and physical: content rises in once, pressed things give slightly, the sheet slides on a drawer curve. Everything still works with no JS and with reduced motion.",
+    "keyCharacteristics": [
+      "Warm stone ground, white borderless cards, tinted panels for screens.",
+      "One blue, only on actions.",
+      "One typeface (Figtree Variable), heavy tight headlines, 18px body.",
+      "Large soft corners everywhere; pill-shaped buttons.",
+      "Flat at rest; shadow only on the overlay sheet.",
+      "Real screenshots or clearly labelled demo fragments; never invented proof."
+    ],
+    "rules": [
+      {
+        "name": "The Blue Means Do Rule",
+        "body": "Blue appears only on something you can press, or on the RWS mark. Never on a heading, a panel, a section background, a highlight word or a statistic. If you can't tap it, it isn't blue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Warm Neutral Rule",
+        "body": "Every neutral is a warm stone, never a cool grey. New neutrals sit between `ground` and `surface-2` or between `ink-2` and `ink`.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Voice Rule",
+        "body": "One family, no second typeface, no monospace, no uppercase tracking labels. Hierarchy comes from size and weight alone.",
+        "section": "typography"
+      },
+      {
+        "name": "The Readable Floor Rule",
+        "body": "Body is 18px and interactive text is 16px minimum. The audience is busy and often on a phone.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat At Rest Rule",
+        "body": "Only an overlay may cast a shadow. If an element sits in the page flow, separate it by tone, not by shadow or line.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep blue on things you can press: buttons, arrow discs, the RWS mark, focus, selection.",
+      "**Do** put content on white cards with `rounded.card` corners, no border, no shadow, floating on Warm Stone.",
+      "**Do** show real screenshots on Tinted Panel frames inside cards, with corners stepping down inward.",
+      "**Do** label any drawn interface as demo data, visibly and in its accessible name.",
+      "**Do** write headlines that lead with the business outcome, in first person and plain words.",
+      "**Do** keep body at 18px, interactive text at 16px or more, and touch targets at 44px or more.",
+      "**Do** keep motion short, once-only and physical, with no-JS and reduced-motion fallbacks.",
+      "**Do** say \"worldwide\" where scope matters."
+    ],
+    "donts": [
+      "**Don't** use gradients, glows, glass or blur, or decorative background shapes.",
+      "**Don't** add eyebrow or kicker labels above headings, or uppercase tracked labels.",
+      "**Don't** use emoji as icons; use the line icon set at 20px.",
+      "**Don't** give cards a resting shadow or a border; only the overlay sheet casts a shadow.",
+      "**Don't** use blue on headings, panels, backgrounds or highlighted words.",
+      "**Don't** add a second typeface or a monospace \"developer\" accent.",
+      "**Don't** frame the business by location: no \"built in Jamaica\", no country lists or flags.",
+      "**Don't** show prices, discounts or \"cheap\" positioning.",
+      "**Don't** invent proof: no testimonials, client logos, ratings or statistics beyond what is real.",
+      "**Don't** use em dashes in copy."
+    ]
+  }
+}

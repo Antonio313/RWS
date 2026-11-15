@@ -21,7 +21,7 @@ export const sendConsultationEmail = async (
       console.warn('EmailJS is not configured. Please add credentials to .env.local');
       return {
         success: false,
-        message: 'Email service is not configured. Please contact us directly at reuelswebservices@gmail.com'
+        message: 'The form isn\'t set up yet. Email me at reuelswebservices@gmail.com.'
       };
     }
 
@@ -46,13 +46,13 @@ export const sendConsultationEmail = async (
 
     return {
       success: true,
-      message: 'Thank you! We\'ll get back to you within 24 hours.'
+      message: 'Message sent.'
     };
   } catch (error) {
     console.error('EmailJS Error:', error);
     return {
       success: false,
-      message: 'Oops! Something went wrong. Please try again or email us directly at reuelswebservices@gmail.com'
+      message: 'That didn\'t send. Try again, or email me at reuelswebservices@gmail.com.'
     };
   }
 };

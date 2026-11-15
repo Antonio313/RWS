@@ -1,33 +1,31 @@
 export const SECTION_IDS = {
   HOME: 'home',
+  WORK: 'work',
   SERVICES: 'services',
-  PORTFOLIO: 'portfolio',
+  ABOUT: 'about',
   CONTACT: 'contact',
 } as const;
 
 export const NAV_LINKS = [
-  { id: SECTION_IDS.HOME, label: 'Home' },
+  { id: SECTION_IDS.WORK, label: 'Work' },
   { id: SECTION_IDS.SERVICES, label: 'Services' },
-  { id: SECTION_IDS.PORTFOLIO, label: 'Portfolio' },
-  { id: SECTION_IDS.CONTACT, label: 'Contact' },
+  { id: SECTION_IDS.ABOUT, label: 'About' },
 ];
 
 export const SERVICE_OPTIONS = [
-  'E-Commerce Website',
-  'Inventory Management System',
-  'Appointment System',
-  'Static Website',
-  'Content Management System (CMS)',
-  'Database Management System',
-  'Website Maintenance',
-  'System Optimization',
-  'Other/Multiple Services'
-];
+  'A website or online store',
+  'A website I can update myself',
+  'A business system',
+  'Fixing or improving what I have',
+  'Hosting and support',
+  'Not sure yet',
+] as const;
 
-export const BUDGET_OPTIONS = [
-  'Less than $500',
-  '$500 - $1,000',
-  '$1,000 - $2,500',
-  '$2,500+',
-  'Not sure yet'
-];
+export type ServiceOption = (typeof SERVICE_OPTIONS)[number];
+
+export const PREFILL_EVENT = 'rws:prefill';
+
+export interface PrefillDetail {
+  service: ServiceOption;
+  starter: string;
+}

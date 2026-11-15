@@ -1,84 +1,75 @@
-import { useEffect } from 'react';
-import { NAV_LINKS } from '../../utils/constants';
+import Wordmark from '../ui/Wordmark';
+import { useEffect, useRef } from 'react';
+import { X } from 'lucide-react';
+import { NAV_LINKS, SECTION_IDS } from '../../utils/constants';
+import { contactInfo } from '../../data/contactInfo';
 
 interface MobileMenuProps {
-  isOpen: boolean;
-  activeSection: string;
-  onNavigate: (sectionId: string) => void;
+  open: boolean;
   onClose: () => void;
 }
 
-export default function MobileMenu({ isOpen, activeSection, onNavigate, onClose }: MobileMenuProps) {
-  useEffect(() => {
-    // Prevent body scroll when menu is open
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+export default function MobileMenu({ open, onClose }: MobileMenuProps) {
+  const closeRef = useRef<HTMLButtonElement>(null);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    closeRef.current?.focus();
     return () => {
-      document.body.style.overflow = 'unset';
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
     };
-  }, [isOpen]);
-
-  useEffect(() => {
-    // Close menu on Escape key
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        onClose();
-      }
-    };
-
-    window.addEventListener('keydown', handleEscape);
-    return () => window.removeEventListener('keydown', handleEscape);
-  }, [isOpen, onClose]);
-
-  if (!isOpen) return null;
+  }, [open, onClose]);
 
   return (
-    <>
-      {/* Backdrop */}
-      <div
-        className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 md:hidden animate-fade-in"
-        onClick={onClose}
-      />
-
-      {/* Menu */}
-      <div className="fixed top-0 right-0 bottom-0 w-4/5 max-w-sm glass-strong z-50 md:hidden animate-slide-in-right">
-        <div className="flex flex-col h-full p-8 pt-24">
-          {/* Navigation Links */}
-          <nav className="flex flex-col gap-6">
-            {NAV_LINKS.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => onNavigate(link.id)}
-                className={`text-left text-2xl font-semibold transition-colors ${
-                  activeSection === link.id
-                    ? 'text-purple-500'
-                    : 'text-gray-300 hover:text-purple-500'
-                }`}
-              >
-                {link.label}
-                {activeSection === link.id && (
-                  <div className="h-1 w-12 bg-gradient-to-r from-purple-500 to-cyan-500 mt-2"></div>
-                )}
-              </button>
-            ))}
-          </nav>
-
-          {/* Contact Info */}
-          <div className="mt-auto pt-8 border-t border-purple-500/30">
-            <p className="text-sm text-gray-400 mb-2">Ready to start?</p>
-            <a
-              href="tel:8765738748"
-              className="text-lg font-semibold text-purple-500 hover:text-cyan-500 transition-colors"
-            >
-              (876) 573-8748
-            </a>
-          </div>
-        </div>
+    <div
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menu"
+      hidden={!open}
+      className="fixed inset-0 z-50 flex flex-col bg-ground md:hidden"
+    >
+      <div className="frame flex h-[72px] items-center justify-between">
+        <Wordmark />
+        <button
+          ref={closeRef}
+          type="button"
+          onClick={onClose}
+          className="btn btn-quiet !min-h-[44px] !px-4"
+          aria-label="Close menu"
+        >
+          <X className="h-5 w-5" aria-hidden="true" />
+          <span className="text-[16px]">Close</span>
+        </button>
       </div>
-    </>
+
+      <nav className="frame flex flex-1 flex-col justify-center gap-2" aria-label="Mobile">
+        {[...NAV_LINKS, { id: SECTION_IDS.CONTACT, label: 'Contact' }].map((link) => (
+          <a
+            key={link.id}
+            href={`#${link.id}`}
+            onClick={onClose}
+            className="title py-2 text-ink"
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+
+      <div className="frame flex flex-col gap-3 pb-10">
+        <a href={`#${SECTION_IDS.CONTACT}`} onClick={onClose} className="btn btn-primary w-full">
+          Start a project
+        </a>
+        <a href={`https://wa.me/1${contactInfo.phone}`} className="btn btn-quiet w-full">
+          WhatsApp {contactInfo.phoneFormatted}
+        </a>
+      </div>
+    </div>
   );
 }

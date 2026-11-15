@@ -1,131 +1,58 @@
-import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
-import { FaTiktok } from 'react-icons/fa';
-import { contactInfo } from '../../data/contactInfo';
+import Wordmark from '../ui/Wordmark';
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
+import { NAV_LINKS, SECTION_IDS } from '../../utils/constants';
 import { socialLinks } from '../../data/socialLinks';
-import { NAV_LINKS } from '../../utils/constants';
+import { contactInfo } from '../../data/contactInfo';
+
+const socials = [
+  { href: socialLinks.facebook, label: 'Facebook', Icon: FaFacebook },
+  { href: socialLinks.instagram, label: 'Instagram', Icon: FaInstagram },
+  { href: socialLinks.tiktok, label: 'TikTok', Icon: FaTiktok },
+];
 
 export default function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-black border-t border-cyan-500/30">
-      <div className="container mx-auto px-6 py-12">
-        {/* Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
-          {/* About */}
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img
-                src="/RWS Logo, No Tag.png?v=2"
-                alt="RWS Logo"
-                className="h-12 w-auto"
-              />
-              <h3 className="text-xl font-bold gradient-text">
-                {contactInfo.companyName}
-              </h3>
-            </div>
-            <p className="text-gray-400 mb-4 leading-relaxed">
-              {contactInfo.tagline}
-            </p>
-            <p className="text-gray-500 text-sm">
-              Transforming business ideas into powerful digital solutions.
-            </p>
+    <footer className="section pb-10">
+      <div className="frame">
+        <div className="grid gap-10 md:grid-cols-12 md:items-end">
+          <div className="md:col-span-3">
+            <Wordmark full={false} />
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold text-white mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              {NAV_LINKS.map((link) => (
-                <li key={link.id}>
-                  <button
-                    onClick={() => scrollToSection(link.id)}
-                    className="text-gray-400 hover:text-purple-500 transition-colors text-sm"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-              <li>
+          <nav aria-label="Footer" className="flex flex-wrap gap-x-8 gap-y-3 md:col-span-5">
+            {[...NAV_LINKS, { id: SECTION_IDS.CONTACT, label: 'Contact' }].map((l) => (
+              <a key={l.id} href={`#${l.id}`} className="text-link text-[16px] no-underline">
+                {l.label}
+              </a>
+            ))}
+          </nav>
+          <ul className="flex gap-3 md:col-span-4 md:justify-end">
+            {socials.map(({ href, label, Icon }) => (
+              <li key={label}>
                 <a
-                  href={socialLinks.portfolio}
+                  href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-cyan-500 transition-colors text-sm"
+                  aria-label={`${label} (opens in a new tab)`}
+                  className="btn btn-quiet !min-h-[48px] !w-[48px] !p-0"
                 >
-                  Portfolio
+                  <Icon className="h-5 w-5" aria-hidden="true" />
                 </a>
               </li>
-            </ul>
-          </div>
-
-          {/* Contact & Social */}
-          <div>
-            <h3 className="text-lg font-bold text-white mb-4">Get In Touch</h3>
-
-            {/* Contact Details */}
-            <div className="space-y-3 mb-6">
-              <a
-                href={`tel:${contactInfo.phone}`}
-                className="flex items-center gap-3 text-gray-400 hover:text-purple-500 transition-colors text-sm"
-              >
-                <Phone className="w-4 h-4" />
-                {contactInfo.phoneFormatted}
-              </a>
-              <a
-                href={`mailto:${contactInfo.email}`}
-                className="flex items-center gap-3 text-gray-400 hover:text-cyan-500 transition-colors text-sm break-all"
-              >
-                <Mail className="w-4 h-4" />
-                {contactInfo.email}
-              </a>
-            </div>
-
-            {/* Social Media */}
-            <div>
-              <p className="text-sm text-gray-400 mb-3">Follow Us</p>
-              <div className="flex gap-3">
-                <a
-                  href={socialLinks.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-900 border border-purple-500/30 flex items-center justify-center text-purple-500 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a
-                  href={socialLinks.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-900 border border-purple-500/30 flex items-center justify-center text-purple-500 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a
-                  href={socialLinks.tiktok}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-900 border border-purple-500/30 flex items-center justify-center text-purple-500 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all"
-                  aria-label="TikTok"
-                >
-                  <FaTiktok className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-          </div>
+            ))}
+          </ul>
         </div>
 
-        {/* Copyright */}
-        <div className="pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-500 text-sm">
-            &copy; {currentYear} {contactInfo.companyName}. All rights reserved.
+        <p
+          className="mt-16 text-[clamp(2.5rem,7vw,6rem)] font-bold leading-[0.9] tracking-[-0.04em]"
+          aria-hidden="true"
+        >
+          Reuel's Web Services
+        </p>
+
+        <div className="mt-8 flex flex-wrap justify-between gap-4 text-[16px] text-ink-2">
+          <p>Working with clients worldwide.</p>
+          <p>
+            © {new Date().getFullYear()} {contactInfo.companyName}
           </p>
         </div>
       </div>
