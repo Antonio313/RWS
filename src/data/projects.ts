@@ -17,8 +17,8 @@ export const chapters: Chapter[] = [
     theme: { bg: '#0d3b1e', ink: '#f2fbe6', muted: '#b9d9a8' },
     layout: 'phones',
     shots: [
-      { src: '/work/luvchat-product.webp', alt: 'Luv Chat product page for an iPhone 16 with JMD price including GCT, storage and colour options, delivery and pickup at five stores' },
-      { src: '/work/luvchat-phone.webp', alt: 'Luv Chat store on a phone, showing phones with local prices and stock status', phone: true },
+      { src: '/work/luvchat-cart.webp', alt: 'Luv Chat cart with an iPhone 16, accessories that fit it, and an order summary with GCT shown' },
+      { src: '/work/luvchat-phone-product.webp', alt: 'Luv Chat product page on a phone with delivery, pickup at five stores and warranty', phone: true },
     ],
   },
   {
