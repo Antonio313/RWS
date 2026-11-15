@@ -78,8 +78,8 @@ export const chapters: Chapter[] = [
   },
   {
     id: 'ifps',
-    name: 'IRIE FM',
-    kind: 'Procurement app',
+    name: 'IFPS',
+    kind: 'IRIE FM Procurement System',
     headline: 'Purchase requests that follow engineers to the hilltop.',
     problem: 'Buying a transmitter part meant paper forms and chasing signatures between departments.',
     built:

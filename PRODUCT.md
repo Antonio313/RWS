@@ -46,7 +46,7 @@ Reuel's Web Services (RWS) is Reuel "Reu" Richards' web development business, fo
 
 ## Evidence on Hand
 
-- **Client work, OK to name and link:** Pongs Shipping (pongsshipping.com: customer portal and staff dashboard, six-stage package tracking, six-tier roles, two branches; about 80% more efficient operations), Rasta Collections (rastacollections.store: catalogue storefront with owner-run CMS, purchases via eBay), The Mavis Scott Foundation (themavisscottlegacyfoundation.org: site with admin for events, blog, donations, volunteers), IRIE FM procurement app IFPS (phone-first PWA: requests, approvals, delivery tracking, offline drafts; internal, no public link), Jewels and Time (luxury jewelry storefront with lead scoring; in progress).
+- **Client work, OK to name and link:** Pongs Shipping (pongsshipping.com: customer portal and staff dashboard, six-stage package tracking, six-tier roles, two branches; about 80% more efficient operations), Rasta Collections (rastacollections.store: catalogue storefront with owner-run CMS, purchases via eBay), The Mavis Scott Foundation (themavisscottlegacyfoundation.org: site with admin for events, blog, donations, volunteers), IFPS, the IRIE FM Procurement System (phone-first PWA: requests, approvals, delivery tracking, offline drafts; internal, no public link), Jewels and Time (luxury jewelry storefront with lead scoring; in progress).
 - **Own products:** Dutchie (dutchpot.online), ReuGym (reugym.online), Reufolio (reufolio.online).
 - **Screenshots:** Reufolio repo `public/projects/<slug>/screenshot-N.png` for Pongs, Jewels and Time, Dutchie, Mavis Scott, Rasta Collections, ReuGym, Reufolio. Current RWS `public/projects/*.png`.
 - **None yet:** client testimonials or quotes, press, client logos, business statistics beyond the Pongs figure. Do not fabricate any of these.
@@ -61,7 +61,7 @@ The hero is an interactive problem picker ("What's slowing your business down?")
 - Copying the same information into three places: Luv Chat back office with POS sync.
 - Stock runs out before anyone notices / never matches the shelf: Luv Chat stock sync and low-stock alerts.
 - Reports take hours every week / month-end takes a weekend: Pongs live dashboard.
-- Approvals stuck on paper or email: IRIE FM procurement (IFPS).
+- Approvals stuck on paper or email: IFPS (IRIE FM Procurement System).
 - Orders and enquiries lost in WhatsApp: Luv Chat online ordering and pickup; Jewels and Time enquiries.
 - Can't tell which leads are serious: Jewels and Time lead scoring.
 - No website yet: Rasta Collections.

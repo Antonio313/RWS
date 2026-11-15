@@ -1,7 +1,7 @@
 import { Check, Clock3 } from 'lucide-react';
 
 /**
- * A small working-style fragment of the IRIE FM procurement app (IFPS),
+ * A small working-style fragment of IFPS (IRIE FM Procurement System),
  * drawn in HTML with demo data because the real app sits behind company sign-in.
  */
 const steps = [
@@ -13,7 +13,7 @@ const steps = [
 
 export default function IfpsFragment() {
   return (
-    <div data-ui className="bg-[#f5f6f8] p-5 text-[#14161c] sm:p-8" aria-label="Example purchase request in the procurement app, demo data">
+    <div data-ui className="bg-[#f5f6f8] p-5 text-[#14161c] sm:p-8" aria-label="Example purchase request in IFPS, the IRIE FM Procurement System, demo data">
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="whitespace-nowrap text-[15px] text-[#5b6170]">Request PR-1042</p>
@@ -63,7 +63,7 @@ export default function IfpsFragment() {
         ))}
       </ol>
 
-      <p className="mt-5 text-[14px] text-[#5b6170]">Demo data. The real app runs behind IRIE FM's sign-in.</p>
+      <p className="mt-5 text-[14px] text-[#5b6170]">Demo data. The real IFPS runs behind IRIE FM's sign-in.</p>
     </div>
   );
 }

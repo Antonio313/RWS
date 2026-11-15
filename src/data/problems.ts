@@ -67,7 +67,7 @@ export const problems: Problem[] = [
     label: 'Approvals stuck on paper or email',
     hint: 'Chasing signatures between departments',
     client: 'IRIE FM',
-    fix: 'Staff request what they need from their phone, managers approve it level by level, and every step is tracked from order to delivery with a record nobody can edit.',
+    fix: 'With IFPS, the IRIE FM Procurement System, staff request what they need from their phone, managers approve it level by level, and every step is tracked from order to delivery with a record nobody can edit.',
     status: 'Internal tool (demo data shown)',
     media: { kind: 'fragment', which: 'ifps' },
     service: 'A business system',
