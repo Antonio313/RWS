@@ -48,7 +48,7 @@ export default function Hero() {
 
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {visible.map((p, n) => (
-              <li key={p.id} data-reveal style={i(3 + Math.min(n, 7))}>
+              <li key={p.id} data-reveal style={i(n < FIRST_PROBLEMS ? 3 + n : n - FIRST_PROBLEMS)}>
                 <button
                   type="button"
                   className="problem h-full w-full"

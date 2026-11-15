@@ -44,6 +44,27 @@ export function useMotion() {
     };
     window.addEventListener('scroll', onSweep, { passive: true });
 
+    // Content rendered after load (e.g. "Show more") must be registered too, or its
+    // hidden start state never clears.
+    const added = new MutationObserver((records) => {
+      let found = false;
+      for (const rec of records) {
+        rec.addedNodes.forEach((node) => {
+          if (!(node instanceof Element)) return;
+          const els = node.matches('[data-reveal]') ? [node] : [];
+          els.push(...node.querySelectorAll('[data-reveal]'));
+          for (const el of els) {
+            if (el.classList.contains('is-in') || pending.has(el)) continue;
+            pending.add(el);
+            reveal.observe(el);
+            found = true;
+          }
+        });
+      }
+      if (found) onSweep();
+    });
+    added.observe(document.body, { childList: true, subtree: true });
+
     const drifters = Array.from(document.querySelectorAll<HTMLElement>('[data-drift]'));
     let frame = 0;
     const update = () => {
@@ -68,6 +89,7 @@ export function useMotion() {
 
     return () => {
       reveal.disconnect();
+      added.disconnect();
       window.removeEventListener('scroll', onSweep);
       if (sweepFrame) cancelAnimationFrame(sweepFrame);
       window.removeEventListener('scroll', onScroll);
